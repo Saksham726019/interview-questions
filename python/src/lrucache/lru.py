@@ -13,13 +13,11 @@ class LRUCache:
 
             self.cache.insert(0, key)
             self.lru[key] = key
-            self.display()
             # present in cache
         else:
             # update reference
             self.cache.remove(key)
             self.cache.insert(0, key)
-            self.display()
 
     def display(self):
         for i in self.cache:
