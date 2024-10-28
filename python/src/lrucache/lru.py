@@ -6,12 +6,22 @@ class LRUCache:
 
     def refer(self, key):
         # not present in cache
+        if key not in self.lru:
+            if len(self.cache) >= self.capacity:
+                lru_key = self.cache.pop()
+                del self.lru[lru_key]
 
-        # present in cache
-
-        # update reference
+            self.cache.insert(0, key)
+            self.lru[key] = key
+            self.display()
+            # present in cache
+        else:
+            # update reference
+            self.cache.remove(key)
+            self.cache.insert(0, key)
+            self.display()
 
     def display(self):
         for i in self.cache:
-            print(i,end=' ')
+            print(i, end=' ')
         print('')
