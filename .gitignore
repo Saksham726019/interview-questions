@@ -8,3 +8,4 @@ target
 # python stuff
 __pycache__
 *.pyc
+.vscode/settings.json
