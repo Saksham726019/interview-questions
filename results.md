@@ -6,19 +6,22 @@ Results for the Software Interview Problems
 - C++ Docker Image
 
 ```
-template - area for input
+docker build -t cpp-lruCache-image .
+docker images
 ```
 
 -  Python Docker Image
 
 ```
-template - area for input
+docker build -t python-lruCache-image .
+docker images
 ```
 
 - Java Docker Image
 
 ```
-template - area for input
+docker build -t java-lruCache-image .
+docker images
 ```
 
 # Problem - 2
@@ -26,19 +29,20 @@ template - area for input
 - C++ Build
 
 ```
-template - area for input
+g++ -o test test.cpp
+./test
 ```
 
 - Java Build
 
 ```
-template - area for input
+mvn clean package
 ```
 
 - Python Run
 
 ```
-template - area for input
+python lru.py
 ```
 
 # Problem - 3
@@ -46,17 +50,17 @@ template - area for input
 - C++ Docker Run Output
 
 ```
-template - area for input
+docker run cpp-lruCache-image
 ```
 
 - Java Docker Run Output
 
 ```
-template - area for input
+docker run java-lruCache-image
 ```
 
 - Python Docker Run Output
 
 ```
-template - area for input
+docker run python-lruCache-image
 ```
