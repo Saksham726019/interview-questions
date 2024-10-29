@@ -40,7 +40,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>LRUCache</mainClass> <!-- No package prefix since there's no package declaration -->
+                            <mainClass>LRUCache</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
