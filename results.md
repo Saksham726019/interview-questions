@@ -51,16 +51,22 @@ python lru.py
 
 ```
 docker run cpp-lrucache-image
+
+Output: 5 4 1 3
 ```
 
 - Java Docker Run Output
 
 ```
 docker run java-lrucache-image
+
+Output: 5 4 1 3
 ```
 
 - Python Docker Run Output
 
 ```
 docker run python-lrucache-image
+
+Output: 5 4 1 3
 ```
