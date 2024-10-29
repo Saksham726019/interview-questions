@@ -6,21 +6,21 @@ Results for the Software Interview Problems
 - C++ Docker Image
 
 ```
-docker build -t cpp-lruCache-image .
+docker build -t cpp-lrucache-image .
 docker images
 ```
 
 -  Python Docker Image
 
 ```
-docker build -t python-lruCache-image .
+docker build -t python-lrucache-image .
 docker images
 ```
 
 - Java Docker Image
 
 ```
-docker build -t java-lruCache-image .
+docker build -t java-lrucache-image .
 docker images
 ```
 
@@ -50,17 +50,17 @@ python lru.py
 - C++ Docker Run Output
 
 ```
-docker run cpp-lruCache-image
+docker run cpp-lrucache-image
 ```
 
 - Java Docker Run Output
 
 ```
-docker run java-lruCache-image
+docker run java-lrucache-image
 ```
 
 - Python Docker Run Output
 
 ```
-docker run python-lruCache-image
+docker run python-lrucache-image
 ```
