@@ -1,5 +1,6 @@
 import java.util.Deque;
 import java.util.LinkedList;
+import java.util.HashSet;
 
 public class LRUCache {
 
@@ -22,10 +23,22 @@ public class LRUCache {
     void refer(int x)
     {
         // not present in cache
+        if (!dq.contains(x))
+        {
+            if (dq.size() >= csize)
+            {
+                int lru_key = dq.removeLast();
+                map.remove(lru_key);
+            }
 
-        // present in cache
-
-        // update reference
+            dq.push(x);
+            map.add(x);
+        } else
+        {
+            // present in cache
+            dq.remove(x);
+            dq.push(x);
+        }
     }
 
     // display contents of cache
